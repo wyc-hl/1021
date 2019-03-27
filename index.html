@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>换肤 </title>
+		<style type="text/css" >
+			#box{
+				margin: 0px auto;
+				text-align: center;
+				margin-top: 50px;
+			}
+		   body{
+		   		background: url(img/323824.jpg) no-repeat ;
+			 }
+			#box img{
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<img src="img/323824.jpg" width="200px" />
+			<img src="img/323498.jpg" width="200px" />
+			<img src="img/323650.jpg" width="200px" />
+			<img src="img/324127.jpg" width="200px" />
+			<img src="img/324149.jpg" width="200px" />
+		</div>
+		
+	</body>
+	<script type="text/javascript" >
+		window.onload=function(){
+			var image=document.getElementsByTagName("img");
+			image[0].onclick=function(){
+					document.body.style.backgroundImage="url(img/323824.jpg)";
+				}
+			image[1].onclick=function(){
+					document.body.style.backgroundImage="url(img/323498.jpg)";
+				}
+			image[2].onclick=function(){
+					document.body.style.backgroundImage="url(img/323650.jpg)";
+				}
+			image[3].onclick=function(){
+					document.body.style.backgroundImage="url(img/324127.jpg)";
+				}
+			image[4].onclick=function(){
+					document.body.style.backgroundImage="url(img/324149.jpg)";
+				}
+		}
+		
+	</script>
+	
+</html>
